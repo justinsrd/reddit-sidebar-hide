@@ -1,0 +1,14 @@
+{
+	"name": "reddit-sidebar-hide",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "Hides the sidebar on reddit web",
+	"permissions": ["storage"],
+	"content_scripts": [
+		{
+			"matches": ["*://*.reddit.com/*"],
+			"css": ["popup.css"],
+			"js": ["lib/jquery-3.2.1.min.js", "popup.js"]
+		}
+	]
+}

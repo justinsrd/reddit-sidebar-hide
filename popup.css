@@ -1,0 +1,46 @@
+.tabmenu {
+	visibility: hidden;
+}
+
+#header-bottom-right {
+	visibility: hidden;
+}
+
+#toggle-button {
+	position: absolute;
+	top: 19px;
+	right: 0;
+	background: #2bd2da;
+	cursor: pointer;
+	padding: 2px;
+	z-index: 5000;
+}
+
+#RESShortcutsEditContainer {
+	margin-right: 0 !important;
+}
+
+
+body.hide-sidebar .content {
+	margin-right: 20px;
+}
+
+body.hide-sidebar .side {
+	display: none;
+}
+
+body.hide-sidebar .panestack-title {
+	margin-right: 20px;
+}
+
+body.hide-sidebar .sitetable.nestedlisting {
+	margin-right: 20px;
+}
+
+body.hide-sidebar .md {
+	max-width: none !important;
+}
+
+/*body.hide-sidebar .content .link>.entry {
+	width: 95%;
+}*/

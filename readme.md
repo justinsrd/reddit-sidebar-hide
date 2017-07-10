@@ -1,0 +1,1 @@
+For when the reddit sidebar takes up too much space on my screen.
