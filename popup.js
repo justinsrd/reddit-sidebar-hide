@@ -1,18 +1,16 @@
+// Add save button to menubar
+// Hide sidebar on sub page
+// Fix styles for comments pages
+// Hide username?
+// Make toggle button
+// If in multisubs -> highlight sub links
+
 $(document).ready(function() {
 	hideUnusedMenuItems();
 	addSaveButtonToMenuBar();
 	addToggleButton();
 });
 
-
-
-
-// Add save button to menubar
-// Hide sidebar on sub page
-// Fix styles for comments pages
-// Hide username?
-// Make toggle button
-// In in r/other -> highlight subs
 
 function hideUnusedMenuItems() {
 	const LIST_OF_ITEMS_TO_HIDE = ['rising', 'controversial', 'gilded', 'wiki', 'promoted', ''];
@@ -56,6 +54,10 @@ function addToggleButton() {
 	$('#toggle-button').click(function() {
 		$('body').toggleClass('hide-sidebar');
 	});
-
-
 }
+
+
+
+
+
+
