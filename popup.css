@@ -39,3 +39,7 @@ body.hide-sidebar .sitetable.nestedlisting {
 body.hide-sidebar .md {
 	max-width: none !important;
 }
+
+.expando-button {
+	background: transparent !important;
+}
