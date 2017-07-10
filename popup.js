@@ -6,11 +6,24 @@
 // If in multisubs -> highlight sub links
 
 $(document).ready(function() {
+	applySidebarStylesIfNecessary();
+
+
 	hideUnusedMenuItems();
 	addSaveButtonToMenuBar();
 	addToggleButton();
 });
 
+let sidebarHiddenToggled = false;
+
+function applySidebarStylesIfNecessary() {
+	chrome.storage.local.get('hideSidebar', function(data) {
+		if (data.hideSidebar === true) {
+			$('body').toggleClass('hide-sidebar');
+			sidebarHiddenToggled = true;
+		}
+	});
+}
 
 function hideUnusedMenuItems() {
 	const LIST_OF_ITEMS_TO_HIDE = ['rising', 'controversial', 'gilded', 'wiki', 'promoted', ''];
@@ -52,7 +65,9 @@ function addToggleButton() {
 	document.querySelector('#header').appendChild(toggleButton);
 
 	$('#toggle-button').click(function() {
-		$('body').toggleClass('hide-sidebar');
+		chrome.storage.local.set({hideSidebar: !sidebarHiddenToggled}, function(data) {
+			$('body').toggleClass('hide-sidebar');
+		});
 	});
 }
 
