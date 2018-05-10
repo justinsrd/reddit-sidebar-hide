@@ -40,6 +40,7 @@ body.hide-sidebar .md {
 	max-width: none !important;
 }
 
-.expando-button {
-	background: transparent !important;
+a.expando-button {
+	background: pink !important;
+	border-radius: 3px !important;
 }
