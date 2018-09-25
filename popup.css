@@ -2,22 +2,12 @@
 	visibility: hidden;
 }
 
-#header-bottom-right {
-	visibility: hidden;
-}
-
-#toggle-button {
-	position: absolute;
-	top: 19px;
-	right: 0;
-	background: #2bd2da;
-	cursor: pointer;
-	padding: 2px;
-	z-index: 5000;
-}
-
 #RESShortcutsEditContainer {
 	margin-right: 0 !important;
+}
+
+body.hide-sidebar {
+	min-width: 0 !important;
 }
 
 body.hide-sidebar .content {
@@ -41,5 +31,26 @@ body.hide-sidebar .md {
 }
 
 .expando-button {
-	background: transparent !important;
+    background: #e2b0e1 !important;
+    box-sizing: border-box;
+    border-top: 1px solid lightblue;
+    border-right: 2px dotted lightblue;
+    border-bottom: 2px dotted lightblue;
+    border-left: 1px solid lightblue;
+}
+
+#toggle-hide-show-button {
+	margin-right: 4px;
+    display: inline-block;
+    padding: 0 3px;
+    cursor: pointer;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-weight: bold;
+}
+#toggle-hide-show-button:hover {
+    text-decoration: underline;
+}
+
+.user > a {
+    display: none !important;
 }
